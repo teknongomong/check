@@ -43,6 +43,6 @@ jobs:
         export DISPLAY=:0
         /usr/bin/Xvfb :0 -screen 0 1024x768x24 &
         sleep 5
-        xvfb-run python run.py ${{ matrix.rangeIndex }}
+        xvfb-run python check.py ${{ matrix.rangeIndex }}
     - name: done
       run: exit
